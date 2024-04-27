@@ -1,0 +1,21 @@
+name: Purple Pong
+version: 1
+summary: purplepong
+description: |
+  pong but purple :D
+    
+confinement: devmode
+
+base: core18
+
+parts:
+  Purple Pong:
+    plugin: python
+    python-version: python3
+    source: https://github.com/lem0nmel0n/pong.git    
+    stage-packages:
+    - python-six
+    
+apps:
+  Purple Pong:
+    bin/purplepong    

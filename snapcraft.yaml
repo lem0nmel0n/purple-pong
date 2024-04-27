@@ -1,21 +1,24 @@
 name: purplepong
-version: 1
-summary: purplepong
+summary: A small game I made in my free time (with a tutorial cause I'm not great at programming)
 description: |
-  pong but purple :D
-    
-confinement: devmode
-
-base: core18
+  It's pong but it's purple :D,
+  Left player moves with W and S,
+  Right player moves with the beloved up and down arrow keys,
+version: test  
+base: core22  
+confinement: strict
 
 parts:
-  Purple Pong:
+  purplepong:
     plugin: python
+    python-packages:
+      - pygame
     python-version: python3
     source: https://github.com/lem0nmel0n/purple-pong.git  
     stage-packages:
-    - python-six
+    - python3-usb
     
 apps:
-  Purple Pong:
-    bin/purplepong    
+  purplepong:
+    command: bin/purplepong  
+

@@ -21,3 +21,7 @@ parts:
 apps:
   purplepong:
     command: bin/purplepong     
+
+architectures:
+  - build-on: [amd64]
+    build-for: [amd64]    

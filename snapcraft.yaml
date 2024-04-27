@@ -17,6 +17,7 @@ parts:
     source: https://github.com/lem0nmel0n/purple-pong.git  
     stage-packages:
     - python3-usb
+    - git
     
 apps:
   purplepong:

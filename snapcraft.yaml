@@ -22,6 +22,10 @@ apps:
   purplepong:
     command: bin/purplepong     
 
+
 architectures:
-  - build-on: [amd64]
-    build-for: [amd64]    
+  - build-on: s390x
+  - build-on: ppc64el
+  - build-on: arm64
+  - build-on: armhf
+  - build-on: amd64 

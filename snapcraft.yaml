@@ -12,7 +12,7 @@ parts:
   Purple Pong:
     plugin: python
     python-version: python3
-    source: https://github.com/lem0nmel0n/pong.git    
+    source: https://github.com/lem0nmel0n/purple-pong.git  
     stage-packages:
     - python-six
     

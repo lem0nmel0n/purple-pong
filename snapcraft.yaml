@@ -17,8 +17,6 @@ parts:
     
       source-type: git  
       source: https://github.com/lem0nmel0n/purple-pong.git
-      stage-packages:
-        - libX11.so.6
     
 apps:
   purplepong:

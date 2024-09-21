@@ -3,20 +3,24 @@ base: core22
 version: '1' 
 summary: A small game of pong. 
 description: |
-  It's pong but it's purple :D,
-  Left player moves with W and S,
-  Right player moves with the beloved up and down arrow keys,
+  it's pong but it's purple :D,
+  left player moves with W and S,
+  right player moves with the up and down arrow keys,
 
 grade: stable
 confinement: strict
 parts:
-  purplepong:
-    plugin: python
-    python-packages:
-      - pygame
+  app-engine:
+      purplepong:
+        plugin: python
+        python-packages:
+          - pygame
     
-    source-type: git  
-    source: https://github.com/lem0nmel0n/purple-pong
+        source-type: git  
+        source: https://github.com/lem0nmel0n/purple-pong.git
+        
+        stage-packages:
+          - libX11.so.6
     
 apps:
   purplepong:
